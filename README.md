@@ -1,9 +1,9 @@
-# ✅ VE-Governance Protocol  
+#  VE-Governance Protocol  
 *A Vote-Escrow Based DeFi Governance & Incentive System*
 
 ---
 
-## 📌 Overview
+##  Overview
 
 VE-Governance Protocol is a decentralized governance and incentive system inspired by Curve-style vote escrow mechanisms.
 
@@ -13,37 +13,37 @@ This project was built as part of a college blockchain hackathon.
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
-- ✅ Governance Token (GOV)
-- ✅ Vote Escrow (veGOV) locking mechanism
-- ✅ Gauge-based voting system
-- ✅ Bribe marketplace for incentives
-- ✅ Liquidity staking and rewards
-- ✅ Time-weighted voting power
-- ✅ Fully automated demo script
+-  Governance Token (GOV)
+-  Vote Escrow (veGOV) locking mechanism
+-  Gauge-based voting system
+-  Bribe marketplace for incentives
+-  Liquidity staking and rewards
+-  Time-weighted voting power
+-  Fully automated demo script
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
-### 🪙 GovernanceToken.sol
+###  GovernanceToken.sol
 An ERC20-compliant token used for governance participation and protocol incentives.  
 It serves as the primary utility token for voting, staking, and earning rewards.
 
-### 🔒 VotingEscrow.sol
+###  VotingEscrow.sol
 Handles the locking of GOV tokens and generates veGOV voting power.  
 The longer the lock duration, the higher the voting influence granted to users.
 
-### ⚙️ GaugeController.sol
+###  GaugeController.sol
 Manages the creation, configuration, and governance of liquidity gauges.  
 Allows veGOV holders to vote on reward distribution across different pools.
 
-### 💸 BribeMarket.sol
+###  BribeMarket.sol
 Enables external protocols and projects to offer incentives (bribes) to veGOV holders.  
 Encourages voters to direct emissions toward specific liquidity pools.
 
-### 📊 LiquidityGauge.sol
+###  LiquidityGauge.sol
 Controls liquidity provider staking and reward distribution mechanisms.  
 Tracks deposits, calculates rewards, and ensures fair incentive allocation.
 
@@ -55,7 +55,7 @@ Tracks deposits, calculates rewards, and ensures fair incentive allocation.
 
 
 
-## 🔄 Flow
+##  Flow
 
 1. Users lock GOV in VotingEscrow  
 2. Receive veGOV voting power  
@@ -66,7 +66,7 @@ Tracks deposits, calculates rewards, and ensures fair incentive allocation.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - Solidity ^0.8.20  
 - Hardhat  
@@ -81,13 +81,13 @@ Follow the steps below to set up and run the project locally.
 
 ---
 
-### 2️⃣ Install Dependencies
+### 2️ Install Dependencies
 
 Install all required project dependencies using npm:
 ```bash
 npm install
 ```
-## 3️⃣ Start Local Blockchain
+## Start Local Blockchain
 Run a local Ethereum development network using Hardhat:
 ```bash
 npx hardhat node
@@ -95,7 +95,7 @@ npx hardhat node
 
 This will start a local blockchain and provide test accounts with pre-funded ETH.
 
-##  4️⃣ Deploy Smart Contracts
+##   Deploy Smart Contracts
 
 Deploy the smart contracts to the local network:
 ```bash
@@ -104,7 +104,7 @@ npx hardhat run scripts/deploy.js --network localhost
 
 After deployment, note down the generated contract addresses.
 
-## 5️⃣ Configure Demo Script
+##  Configure Demo Script
 
 Open the demo script file:
 ```bash
@@ -123,7 +123,7 @@ const LIQUIDITY_GAUGE_ADDRESS = "0x...";
 
 Make sure all addresses match the deployed contracts.
 
-## 6️⃣ Run Demo
+##  Run Demo
 
 Execute the demo script to test the complete workflow:
 ```bash
@@ -134,27 +134,27 @@ This will simulate token locking, voting, staking, and reward distribution.
 
 
 
-## 📈 Future Improvements
+##  Future Improvements
 
-### 🌐 Web Frontend
+### Web Frontend
 Develop a user-friendly web interface to allow users to easily lock tokens, vote on gauges, track rewards, and manage their governance participation without relying on command-line tools.
 
-### 🔗 Cross-Chain Support
+###  Cross-Chain Support
 Enable interoperability across multiple blockchain networks, allowing users to participate in governance and liquidity incentives beyond a single chain.
 
-### 🗳️ Governance Proposals
+###  Governance Proposals
 Introduce a structured proposal system where veGOV holders can submit, discuss, and vote on protocol upgrades, parameter changes, and ecosystem initiatives.
 
-### 🖼️ NFT Voting
+###  NFT Voting
 Implement NFT-based voting rights, where governance power can be represented through transferable or soulbound NFTs to improve transparency and engagement.
 
-### 💰 Treasury Module
+###  Treasury Module
 Create a dedicated treasury management system to handle protocol funds, optimize spending, and support long-term sustainability through community-approved allocations.
 
-### 🚀 Mainnet Deployment
+###  Mainnet Deployment
 Deploy the protocol on Ethereum mainnet after thorough testing, ensuring scalability, reliability, and readiness for real-world usage.
 
-### 🔐 Security Audits
+###  Security Audits
 Conduct professional smart contract audits and continuous security testing to identify vulnerabilities and protect user funds and protocol integrity.
 
 
